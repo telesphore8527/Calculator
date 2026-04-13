@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face{
+    font-family: 'my digit';
+    src:url('font/Digital-7\ V7.woff2') format('woff2');
+}
+@font-face{
+    font-family: 'my orbitron';
+    src:url('font/Orbitron\ Regular.woff2') format('woff2'),
+     url('font/Orbitron\ Regular.woff') format('woff');
+}
+body{
+    background-color: lightgray;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+}
+.container{
+    background: black;
+    padding: 5px;
+    /* width: 45%; */
+}
+#display{
+    font-family: 'my digit';
+    color: snow;
+    /* width: calc(100%-30px); */
+    outline: none;
+    font-size: 30px;
+    margin: 5px;
+    padding: 15px;
+    text-align: right;
+    letter-spacing: 2px;
+    background-color: transparent;
+    /* border: 2px solid gray; */
+
+}
+.buttons{
+    display: grid;
+    /* grid-template-columns: repeat(4, 80px); */
+    grid-template-columns:repeat(4,25%);
+    background-color: black;
+    margin: 5px;
+}
+.buttons button{
+    font-family: 'my orbitron';
+    /* padding: 23px; */
+    padding: 18%;
+    background-color: rgb(65, 65, 63);
+    color: snow;
+    font-size: 20px;
+    border: none;
+    margin: 1px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttons button:active{
+    margin: 0px;
+}
+#division, #product, #soustraction, #addition{
+    background: gray;
+}
+#ac{
+   grid-column: 1/ 3; 
+   color: #000;
+   background-color: #a81b1b;
+}
+#zero{
+    grid-column:1/ span 2;
+}
+#equal{
+    grid-column: 4;
+    grid-row: 4/ span 2;
+    background-color: darkgreen;
+}
+
